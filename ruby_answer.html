@@ -16,3 +16,20 @@ input_length = input.length
 puts('+' * (input_length + 2))
 puts('+'+input+'+')
 puts('+' * (input_length + 2))
+<!--C097-->
+N, X, Y = gets.split(' ').map(&:to_i)
+for i in 1 .. N do
+    if
+        i % X ==0 && i % Y == 0
+        puts "AB"
+    elsif
+        i % X != 0 && i % Y != 0
+        puts "N"
+    elsif
+        i % X == 0
+        puts "A"
+    else
+        i % Y == 0
+        puts "B"
+    end
+end
